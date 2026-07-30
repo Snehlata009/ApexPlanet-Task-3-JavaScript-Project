@@ -1,0 +1,51 @@
+window.onload = function () {
+    alert("Welcome to Snehlata Portfolio Website!");
+};
+
+
+// Smooth Scrolling
+
+document.querySelectorAll("nav a").forEach(link => {
+
+    link.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        const section = document.querySelector(
+            this.getAttribute("href")
+        );
+
+        if(section){
+            section.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+    });
+
+});
+
+
+// Button Click
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", function(){
+
+        alert("Thanks for visiting my project!");
+
+    });
+
+});
+
+
+// Footer Year Update
+
+const footer = document.querySelector("footer p");
+
+const year = new Date().getFullYear();
+
+footer.innerHTML =
+`© ${year} Snehlata Portfolio. All Rights Reserved.`;
