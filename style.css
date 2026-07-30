@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background: darkblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+
+#home img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+#home h1 {
+    font-size: 40px;
+    color: darkblue;
+    margin: 15px;
+}
+
+
+#home p {
+    font-size: 18px;
+    margin: 20px;
+}
+
+
+button {
+    background: darkblue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: red;
+}
+
+
+
+/* Skills */
+
+.skill {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+
+
+/* Projects */
+
+.project {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+
+.project h3 {
+    color: darkblue;
+}
+
+
+
+/* Contact */
+
+#contact form {
+    background: white;
+    width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+/* Footer */
+
+footer {
+    background: darkblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+
+    section {
+        padding: 30px 15px;
+    }
+
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+
+    #home img {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .project,
+    .skill {
+        margin: 15px 0;
+    }
+
+
+    #contact form {
+        width: 100%;
+    }
+
+}
